@@ -11,7 +11,7 @@ import { useLoginMutation, LoginMutation } from "../generated/graphql";
 interface loginProps {}
 
 const login: React.FC<loginProps> = ({}) => {
-  const [_result, login] = useLoginMutation();
+  const [, login] = useLoginMutation();
   const router = useRouter();
   return (
     <Wrapper>

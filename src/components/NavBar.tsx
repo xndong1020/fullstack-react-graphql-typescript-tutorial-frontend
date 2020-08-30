@@ -29,10 +29,10 @@ export const NavBar: React.FC<NavBarProps> = ({}) => {
         </Box>
       )}
       {isLoggedIn && (
-        <Box ml={"auto"}>
-          <span>Welcome! {data.me.user.username}</span>
+        <Flex ml={"auto"}>
+          <Box mr={2}>Welcome! {data.me.user.username}</Box>
           <Button variant="link">Logout</Button>
-        </Box>
+        </Flex>
       )}
     </Flex>
   );
